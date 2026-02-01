@@ -5,20 +5,15 @@
 <title>NES – Mario 3</title>
 
 <script>
-  // CONFIGURAÇÃO NES (compatível com EmulatorJS estável)
-  EJS_DEBUG_XX = true;
-  EJS_threads = false;
-  EJS_player        = "#game";
-  EJS_core          = "nestopia";          // Core NES
-  EJS_gameUrl       = "roms/mario3.nes";     // Caminho da ROM NES
-  EJS_pathtodata    = "data/";             // Caminho padrão do EmulatorJS
-
-  // Inicialização automática
+  EJS_player = "#game";
+  EJS_core = "nes";                       // NES
+  EJS_gameUrl = "roms/mario3.nes";       // sua ROM
+  EJS_pathtodata = "https://cdn.emulatorjs.org/latest/data/";  
   EJS_startOnLoaded = true;
-  EJS_fullscreenOnLoaded = false; // Fullscreen só após toque
+  EJS_fullscreenOnLoaded = false;
 </script>
 
-<script src="data/loader.js"></script>
+<script src="https://cdn.emulatorjs.org/latest/data/loader.js"></script>
 
 <style>
   html, body {
